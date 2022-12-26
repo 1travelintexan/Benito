@@ -1,3 +1,17 @@
+#app {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#logo {
+  width: 5rem;
+}
+.image {
+  margin: 10px;
+  width: 80%;
+}
 #loader {
   height: 100vh;
   display: flex;
@@ -5,13 +19,18 @@
   justify-content: center;
 }
 #navbar {
+  width: 100vw;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding: 0 30px 0 30px;
+  margin: 0;
   background-color: rgb(1, 58, 18);
-  color: rgb(195, 245, 195);
+  color: rgb(222, 247, 222);
+  font-size: 1.5rem;
 }
 #small-navbar {
+  width: 100vw;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -22,4 +41,31 @@
 .link {
   color: white;
   text-decoration: none;
+}
+#first-image {
+  margin: 15px;
+  width: 80%;
+  height: 60vh;
+  background-image: url("./images/southBeach.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  color: azure;
+  font-size: 1.5rem;
+}
+.paragragh {
+  width: 60%;
+  text-align: center;
+  font-size: 1.2rem;
+}
+.sub-heading {
+  color: aqua;
+  font-size: 2.5rem;
+  font-weight: bold;
+  font-family: cursive;
+  background-color: azure;
+  margin: 50px;
 }
