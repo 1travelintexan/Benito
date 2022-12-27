@@ -9,11 +9,11 @@ function SmallNavbar() {
       <a href="#about" className="link">
         About
       </a>
-      <a href="#contact" className="link">
+      <a href="#contact" target="blank" className="link">
         Contact
       </a>
-      <a href="#credentails" className="link">
-        Credentials
+      <a href="#location" className="link">
+        Location
       </a>
       <a href="/reservation" className="link">
         Book

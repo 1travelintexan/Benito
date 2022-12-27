@@ -12,6 +12,8 @@
 }
 #heading {
   font-family: "Shrikhand", cursive;
+  text-decoration: none;
+  color: rgb(222, 247, 222);
 }
 .image {
   margin: 10px;
@@ -89,11 +91,12 @@
   align-items: center;
   flex-direction: column;
   text-align: center;
-  width: 60%;
+  width: 50%;
 }
 
 #reservation-page {
   text-align: center;
+  margin: 30px;
 }
 
 #form {
@@ -118,20 +121,23 @@
   align-items: center;
   justify-content: space-around;
   padding: 0;
+  margin-top: 10px;
 }
 .footer-section {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   flex-direction: column;
   margin: 0;
   padding: 0;
   height: 100%;
 }
 .footer-section-div {
+  width: 100%;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin: 5px;
 }
 .footer-section-div img {
   height: 2rem;
@@ -141,13 +147,15 @@
   color: aqua;
 }
 .footer-section p {
-  margin: 0;
+  margin: 0 0 0 20px;
   padding: 0;
 }
 .footer-section h4 {
-  margin: 0;
+  margin: 0 0 10px 0;
   padding: 0;
+  font-size: 1.5rem;
+  color: aliceblue;
 }
 #footer-logo {
-  height: 90%;
+  height: 60%;
 }
