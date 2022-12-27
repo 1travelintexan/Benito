@@ -1,13 +1,18 @@
 import { Button } from "@mantine/core";
-import logo from "../images/logo.png";
+import { Link } from "react-router-dom";
+import logo from "../images/massage.png";
 function Navbar() {
   return (
     <nav id="navbar">
-      <img src={logo} alt="logo" id="logo" />
-      <h1>Massage by Benito</h1>
-      <Button variant="outline" color="lime.9">
-        Book Reservation
-      </Button>
+      <Link to="/">
+        <img src={logo} alt="logo" id="logo" />
+      </Link>
+      <h1 id="heading">Massage by Benito</h1>
+      <Link to="/reservation">
+        <Button variant="outline" color="lime.9">
+          Book Reservation
+        </Button>
+      </Link>
     </nav>
   );
 }

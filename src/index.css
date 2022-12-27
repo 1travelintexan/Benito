@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Shrikhand&display=swap");
 #app {
   width: 100vw;
   display: flex;
@@ -8,9 +10,13 @@
 #logo {
   width: 5rem;
 }
+#heading {
+  font-family: "Shrikhand", cursive;
+}
 .image {
   margin: 10px;
-  width: 80%;
+  width: 40%;
+  box-shadow: 0 0 30px gray;
 }
 #loader {
   height: 100vh;
@@ -43,9 +49,9 @@
   text-decoration: none;
 }
 #first-image {
-  margin: 15px;
-  width: 80%;
-  height: 60vh;
+  margin-bottom: 15px;
+  width: 100vw;
+  height: 80vh;
   background-image: url("./images/southBeach.png");
   background-size: cover;
   background-repeat: no-repeat;
@@ -57,15 +63,91 @@
   font-size: 1.5rem;
 }
 .paragragh {
-  width: 60%;
+  width: 80%;
   text-align: center;
   font-size: 1.2rem;
 }
 .sub-heading {
+  color: rgb(8, 243, 243);
+  text-shadow: 10px 10px 30px rgb(1, 85, 85);
+  font-size: 4rem;
+  font-family: "Dancing Script", cursive;
+}
+.section {
+  margin: 30px 0 30px 0;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  background-color: rgba(250, 248, 246, 0.63);
+  border-radius: 20px;
+}
+.section-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  width: 60%;
+}
+
+#reservation-page {
+  text-align: center;
+}
+
+#form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 90%;
+  background-color: rgba(250, 248, 246, 0.63);
+  border-radius: 20px;
+  margin-top: 50px;
+  padding: 20px;
+  box-shadow: 0 0 20px gray;
+}
+
+#footer {
+  background-color: rgb(1, 58, 18);
+  color: rgb(222, 247, 222);
+  height: 20vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0;
+}
+.footer-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+.footer-section-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer-section-div img {
+  height: 2rem;
+}
+.footer-section a {
+  text-decoration: none;
   color: aqua;
-  font-size: 2.5rem;
-  font-weight: bold;
-  font-family: cursive;
-  background-color: azure;
-  margin: 50px;
+}
+.footer-section p {
+  margin: 0;
+  padding: 0;
+}
+.footer-section h4 {
+  margin: 0;
+  padding: 0;
+}
+#footer-logo {
+  height: 90%;
 }
