@@ -101,15 +101,25 @@
 
 #form {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  width: 90%;
   background-color: rgba(250, 248, 246, 0.63);
   border-radius: 20px;
   margin-top: 50px;
-  padding: 20px;
   box-shadow: 0 0 20px gray;
+  width: 90vw;
+}
+#form-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 15px;
+  width: 70%;
+}
+#form-side {
+  width: 30%;
+  border-radius: 20px 0 0 20px;
+  height: 100;
+  background-color: rgb(138, 199, 125);
 }
 
 #footer {
