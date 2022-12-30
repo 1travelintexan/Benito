@@ -55,8 +55,8 @@ function Reservation() {
         </div>
       </form>
       <h4>
-        If you would like to reach out via messaging, feel free to send a
-        message directly to Benito.
+        If you would like to reserve a massage directly, feel free to send a
+        message to Benedict.
       </h4>
       <h4> Whatsapp: +49 163 237 0368</h4>
     </div>

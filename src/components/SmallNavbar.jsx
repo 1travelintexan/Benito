@@ -9,7 +9,7 @@ function SmallNavbar() {
       <a href="#about" className="link">
         About
       </a>
-      <a href="#contact" target="blank" className="link">
+      <a href="#contact" className="link">
         Contact
       </a>
       <a href="#location" className="link">

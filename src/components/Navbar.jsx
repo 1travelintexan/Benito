@@ -8,11 +8,11 @@ function Navbar() {
         <img src={logo} alt="logo" id="logo" />
       </Link>
       <Link to="/" id="heading">
-        <h1>Massage by Benito</h1>
+        <h1>Massage Benedict</h1>
       </Link>
       <Link to="/reservation">
         <Button variant="outline" color="lime.9">
-          Book Reservation
+          Reserve
         </Button>
       </Link>
     </nav>

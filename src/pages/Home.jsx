@@ -30,6 +30,7 @@ function Home() {
         </div>
       </div>
       <div className="section" id="about">
+        <img src={ericeira} alt="ericeira" className="image" />
         <div className="section-heading">
           <h2>About Benito</h2>
           <p>
@@ -46,7 +47,6 @@ function Home() {
             strong supporter.
           </p>
         </div>
-        <img src={ericeira} alt="ericeira" className="image" />
       </div>
       <div className="section">
         <img src={town} alt="ericeira" className="image" />
@@ -67,8 +67,8 @@ function Home() {
         <div className="section-heading">
           <h2>Contact</h2>
           <p>Whatsapp: +49 163 237 0368</p>
-          <p>Instagram: </p>
-          <p>Email:</p>
+          <p>Facebook: Benedict Correns </p>
+          <p>Email: b.correns@gmail.com</p>
         </div>
         <img src={olive3} alt="ericeira" className="image" />
       </div>

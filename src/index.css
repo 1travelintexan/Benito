@@ -8,16 +8,17 @@
   flex-direction: column;
 }
 #logo {
-  width: 5rem;
+  width: 4rem;
 }
 #heading {
   font-family: "Shrikhand", cursive;
   text-decoration: none;
   color: rgb(222, 247, 222);
+  margin: 5px;
 }
 .image {
-  margin: 10px;
-  width: 40%;
+  margin: 5px;
+  width: 90%;
   box-shadow: 0 0 30px gray;
 }
 #loader {
@@ -31,11 +32,11 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 30px 0 30px;
-  margin: 0;
+  padding: 5px;
   background-color: rgb(1, 58, 18);
   color: rgb(222, 247, 222);
-  font-size: 1.5rem;
+  font-size: 0.8rem;
+  text-align: center;
 }
 #small-navbar {
   width: 100vw;
@@ -51,18 +52,19 @@
   text-decoration: none;
 }
 #first-image {
-  margin-bottom: 15px;
+  margin-bottom: 5px;
   width: 100vw;
-  height: 80vh;
+  height: 60vh;
   background-image: url("./images/southBeach.png");
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: flex-start;
   flex-direction: column;
+  padding-left: 10px;
   color: azure;
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 .paragragh {
   width: 80%;
@@ -71,19 +73,20 @@
 }
 .sub-heading {
   color: rgb(8, 243, 243);
-  text-shadow: 10px 10px 30px rgb(1, 85, 85);
-  font-size: 4rem;
+  margin: 5px;
+  font-size: 2.3rem;
   font-family: "Dancing Script", cursive;
 }
 .section {
-  margin: 30px 0 30px 0;
-  padding: 20px;
+  margin: 10px 0 10px 0;
+  padding: 10px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-direction: column;
   width: 90%;
   background-color: rgba(250, 248, 246, 0.63);
-  border-radius: 20px;
+  border-radius: 10px;
 }
 .section-heading {
   display: flex;
@@ -91,7 +94,11 @@
   align-items: center;
   flex-direction: column;
   text-align: center;
-  width: 50%;
+  width: 100%;
+}
+.section-heading p {
+  font-size: 1.1rem;
+  margin: 0.5rem;
 }
 
 #reservation-page {
@@ -125,47 +132,159 @@
 #footer {
   background-color: rgb(1, 58, 18);
   color: rgb(222, 247, 222);
-  height: 20vh;
   width: 100vw;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-around;
-  padding: 0;
+  padding: 0px;
   margin-top: 10px;
 }
 .footer-section {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: space-between;
   flex-direction: column;
-  margin: 0;
-  padding: 0;
-  height: 100%;
 }
 .footer-section-div {
-  width: 100%;
   display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  margin: 5px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  padding: 5px;
+  width: 100%;
 }
 .footer-section-div img {
   height: 2rem;
+  display: none;
 }
 .footer-section a {
   text-decoration: none;
   color: aqua;
+  text-align: center;
 }
 .footer-section p {
-  margin: 0 0 0 20px;
+  margin: 0;
   padding: 0;
+  color: aquamarine;
 }
 .footer-section h4 {
-  margin: 0 0 10px 0;
+  font-size: 1.1rem;
   padding: 0;
-  font-size: 1.5rem;
+  margin: 0;
   color: aliceblue;
+  text-align: center;
 }
 #footer-logo {
-  height: 60%;
+  height: 3rem;
+  margin-top: 20px;
+}
+@media screen and (min-width: 680px) {
+  .image {
+    margin: 10px;
+    width: 40%;
+    box-shadow: 0 0 30px gray;
+  }
+  #loader {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #navbar {
+    font-size: 1.5rem;
+  }
+  #first-image {
+    margin-bottom: 15px;
+    height: 80vh;
+    font-size: 1.5rem;
+  }
+  .paragragh {
+    width: 80%;
+    text-align: center;
+    font-size: 1.2rem;
+  }
+  .sub-heading {
+    color: rgb(8, 243, 243);
+    text-shadow: 10px 10px 30px rgb(1, 85, 85);
+    font-size: 4rem;
+    font-family: "Dancing Script", cursive;
+  }
+  .section {
+    margin: 30px 0 30px 0;
+    padding: 20px;
+    flex-direction: row;
+    border-radius: 20px;
+  }
+  .section-heading {
+    width: 50%;
+  }
+
+  #reservation-page {
+    text-align: center;
+    margin: 30px;
+  }
+
+  #form {
+    display: flex;
+    background-color: rgba(250, 248, 246, 0.63);
+    border-radius: 20px;
+    margin-top: 50px;
+    box-shadow: 0 0 20px gray;
+    width: 90vw;
+  }
+  #form-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px;
+    width: 70%;
+  }
+  #form-side {
+    width: 30%;
+    border-radius: 20px 0 0 20px;
+    height: 100;
+    background-color: rgb(138, 199, 125);
+  }
+
+  #footer {
+    margin-top: 5px;
+  }
+  .footer-section {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+  .footer-section-div {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin: 5px;
+  }
+  .footer-section-div img {
+    height: 2rem;
+  }
+  .footer-section a {
+    text-decoration: none;
+    color: aqua;
+  }
+  .footer-section p {
+    margin: 0 0 0 20px;
+    padding: 0;
+  }
+  .footer-section h4 {
+    margin: 0 0 10px 0;
+    padding: 0;
+    font-size: 1.5rem;
+    color: aliceblue;
+  }
+  #footer-logo {
+    height: 4rem;
+  }
 }
