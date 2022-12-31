@@ -2,6 +2,9 @@ import town from "../images/ericeira.png";
 import town2 from "../images/crossroad.jpg";
 import olive3 from "../images/olive3.png";
 import ericeira from "../images/ericeiraRoad.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faWhatsapp, faFacebook } from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 function Home() {
   return (
@@ -66,9 +69,26 @@ function Home() {
       <div className="section" id="contact">
         <div className="section-heading">
           <h2>Contact</h2>
-          <p>Whatsapp: +49 163 237 0368</p>
-          <p>Facebook: Benedict Correns </p>
-          <p>Email: b.correns@gmail.com</p>
+          <div id="whatsapp-div">
+            <FontAwesomeIcon
+              icon={faWhatsapp}
+              className="fa-2x"
+              id="whatsapp-icon"
+            />
+            <h5> +49 163 237 0368</h5>
+          </div>
+          <div id="whatsapp-div">
+            <FontAwesomeIcon
+              icon={faFacebook}
+              className="fa-2x"
+              id="facebook-icon"
+            />
+            <h5>Benedict Correns</h5>
+          </div>
+          <div id="whatsapp-div">
+            <FontAwesomeIcon icon={faEnvelope} className="fa-2x" />
+            <h5>b.correns@gmail.com</h5>
+          </div>
         </div>
         <img src={olive3} alt="ericeira" className="image" />
       </div>
