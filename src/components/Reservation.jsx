@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { Button } from "@mantine/core";
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 
 function Reservation() {
   const [email, setEmail] = useState({
@@ -18,10 +20,6 @@ function Reservation() {
     console.log(email);
   };
 
-  // const handleSend = (e) => {
-  //   window.location.href = `horheyinc8@gmail.com?subject="reservation"&body='hello'`;
-  //   e.preventDefault();
-  // };
   return (
     <div id="reservation-page">
       <form id="form">
@@ -43,22 +41,31 @@ function Reservation() {
           <textarea
             name="comment"
             rows="5"
-            cols="30"
+            cols="20"
             onChange={handleChange}
             style={{ marginBottom: "15px" }}
           />
-          <a
-            href={`mailto:horheyinc8@gmail.com?subject='Massage Reservation'&body=${email.name} would like to request a massage on the date of ${email.date} at ${email.time}. Please respond if this date and time are suitable. Special Comment: ${email.comment}`}
-          >
-            Send
-          </a>
+          <Button variant="outline" color="lime.9">
+            <a
+              href={`mailto:horheyinc8@gmail.com?subject='Massage Reservation'&body=${email.name} would like to request a massage on the date of ${email.date} at ${email.time}. Please respond if this date and time are suitable. Special Comment: ${email.comment}`}
+            >
+              Send
+            </a>
+          </Button>
         </div>
       </form>
-      <h4>
+      <h4 id="reserve-whatsapp">
         If you would like to reserve a massage directly, feel free to send a
         message to Benedict.
       </h4>
-      <h4> Whatsapp: +49 163 237 0368</h4>
+      <div id="whatsapp-div">
+        <FontAwesomeIcon
+          icon={faWhatsapp}
+          className="fa-4x"
+          id="whatsapp-icon"
+        />
+        <h4> +49 163 237 0368</h4>
+      </div>
     </div>
   );
 }

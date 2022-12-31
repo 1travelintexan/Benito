@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Shrikhand&display=swap");
+a {
+  text-decoration: none;
+  color: rgb(21, 160, 21);
+}
 #app {
   width: 100vw;
   display: flex;
@@ -31,7 +35,7 @@
   width: 100vw;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 5px;
   background-color: rgb(1, 58, 18);
   color: rgb(222, 247, 222);
@@ -108,9 +112,10 @@
 
 #form {
   display: flex;
+  flex-direction: column;
   background-color: rgba(250, 248, 246, 0.63);
   border-radius: 20px;
-  margin-top: 50px;
+  margin-top: 20px;
   box-shadow: 0 0 20px gray;
   width: 90vw;
 }
@@ -119,14 +124,13 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 15px;
-  width: 70%;
+  padding: 5px;
+  width: 100%;
 }
 #form-side {
-  width: 30%;
-  border-radius: 20px 0 0 20px;
-  height: 100;
-  background-color: rgb(138, 199, 125);
+  border-radius: 20px 20px 0 0;
+  height: 10vh;
+  background-color: rgba(177, 240, 163, 0.747);
 }
 
 #footer {
@@ -179,6 +183,22 @@
   height: 3rem;
   margin-top: 20px;
 }
+#reserve-whatsapp {
+  color: rgb(15, 104, 15);
+}
+#whatsapp-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#whatsapp-div h4 {
+  padding-left: 20px;
+  font-size: 1.6rem;
+}
+#whatsapp-icon {
+  color: rgb(39, 194, 39);
+}
+
 @media screen and (min-width: 680px) {
   .image {
     margin: 10px;
@@ -227,9 +247,10 @@
 
   #form {
     display: flex;
+    flex-direction: column;
     background-color: rgba(250, 248, 246, 0.63);
     border-radius: 20px;
-    margin-top: 50px;
+    margin-top: 20px;
     box-shadow: 0 0 20px gray;
     width: 90vw;
   }
@@ -238,14 +259,13 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 15px;
-    width: 70%;
+    padding: 5px;
+    width: 100%;
   }
   #form-side {
-    width: 30%;
-    border-radius: 20px 0 0 20px;
-    height: 100;
-    background-color: rgb(138, 199, 125);
+    border-radius: 20px 20px 0 0;
+    height: 10vh;
+    background-color: rgba(177, 240, 163, 0.747);
   }
 
   #footer {
