@@ -9,6 +9,7 @@ function Reservation() {
   const [email, setEmail] = useState({
     name: "",
     email: "",
+    phone: "",
     date: "",
     time: "",
     comment: "",
@@ -23,16 +24,16 @@ function Reservation() {
 
   return (
     <div id="reservation-page">
-      <div id="back-div">
-        <Link to="/">
+      <Link to="/">
+        <div id="back-div">
           <FontAwesomeIcon
             icon={faSquareCaretLeft}
             className="fa-4x"
             id="back-icon"
           />
-        </Link>
-        <h4>Back</h4>
-      </div>
+          <h4>Back</h4>
+        </div>
+      </Link>
       <form id="form">
         <div id="form-side"></div>
         <div id="form-info">
@@ -44,6 +45,8 @@ function Reservation() {
           <input type="text" name="name" onChange={handleChange} />
           <label>Email:</label>
           <input type="email" name="email" onChange={handleChange} />
+          <label>Phone:</label>
+          <input type="tel" name="phone" onChange={handleChange} />
           <label>Date You Requesting:</label>
           <input type="date" name="date" onChange={handleChange} />
           <label>Best Time for you:</label>
@@ -58,7 +61,7 @@ function Reservation() {
           />
           <Button variant="outline" color="lime.9">
             <a
-              href={`mailto:horheyinc8@gmail.com?subject='Massage Reservation'&body=${email.name} would like to request a massage on the date of ${email.date} at ${email.time}. Please respond if this date and time are suitable. Special Comment: ${email.comment}`}
+              href={`mailto:b.correns@gmail.com?subject='Massage Reservation'&body=${email.name} would like to request a massage on the date of ${email.date} at ${email.time}. Please respond if this date and time are suitable with either email or phone: ${email.phone} Special Comment: ${email.comment}`}
             >
               Send
             </a>

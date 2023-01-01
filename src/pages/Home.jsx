@@ -85,10 +85,12 @@ function Home() {
             />
             <h5>Benedict Correns</h5>
           </div>
-          <div id="whatsapp-div">
-            <FontAwesomeIcon icon={faEnvelope} className="fa-2x" />
-            <h5>b.correns@gmail.com</h5>
-          </div>
+          <a href={`mailto:b.correns@gmail.com?subject='Massage Reservation'`}>
+            <div id="whatsapp-div">
+              <FontAwesomeIcon icon={faEnvelope} className="fa-2x" />
+              <h5>b.correns@gmail.com</h5>
+            </div>
+          </a>
         </div>
         <img src={olive3} alt="ericeira" className="image" />
       </div>

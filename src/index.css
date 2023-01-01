@@ -149,14 +149,21 @@ a {
   justify-content: space-between;
   flex-direction: column;
 }
+.footer-section-thanks {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
 .footer-section-div {
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   flex-direction: column;
-  padding: 5px;
-  width: 100%;
+  padding: 0;
+  margin: 0;
+  height: 2rem;
 }
 .footer-section-div img {
   height: 2rem;
@@ -173,6 +180,13 @@ a {
   color: aquamarine;
 }
 .footer-section h4 {
+  font-size: 1.1rem;
+  padding: 0;
+  margin: 0;
+  color: aliceblue;
+  text-align: center;
+}
+.footer-section-thanks h4 {
   font-size: 1.1rem;
   padding: 0;
   margin: 0;
@@ -289,30 +303,35 @@ a {
   }
 
   #footer {
-    margin-top: 5px;
+    margin-top: 15px;
   }
   .footer-section {
     display: flex;
     align-items: center;
     justify-content: flex-start;
     flex-direction: column;
-    margin: 0;
-    padding: 0;
-    height: 100%;
   }
-  .footer-section-div {
-    width: 100%;
+  .footer-section-thanks {
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
-    margin: 5px;
+    flex-direction: column;
+  }
+  .footer-section-div {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    margin-top: 10px;
   }
   .footer-section-div img {
-    height: 2rem;
+    display: block;
+    padding-right: 10px;
   }
   .footer-section a {
     text-decoration: none;
     color: aqua;
+    padding: 5px;
   }
   .footer-section p {
     margin: 0 0 0 20px;
@@ -324,7 +343,13 @@ a {
     font-size: 1.5rem;
     color: aliceblue;
   }
+  .footer-section-thanks h4 {
+    margin: 0 0 10px 0;
+    padding: 0;
+    font-size: 1.5rem;
+    color: aliceblue;
+  }
   #footer-logo {
-    height: 4rem;
+    height: 8rem;
   }
 }
