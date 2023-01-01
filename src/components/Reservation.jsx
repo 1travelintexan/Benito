@@ -3,6 +3,7 @@ import { Button } from "@mantine/core";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
+import { faSquareCaretLeft } from "@fortawesome/free-solid-svg-icons";
 
 function Reservation() {
   const [email, setEmail] = useState({
@@ -22,6 +23,16 @@ function Reservation() {
 
   return (
     <div id="reservation-page">
+      <div id="back-div">
+        <Link to="/">
+          <FontAwesomeIcon
+            icon={faSquareCaretLeft}
+            className="fa-4x"
+            id="back-icon"
+          />
+        </Link>
+        <h4>Back</h4>
+      </div>
       <form id="form">
         <div id="form-side"></div>
         <div id="form-info">

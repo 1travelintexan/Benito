@@ -205,6 +205,19 @@ a {
 #facebook-icon {
   color: rgb(71, 71, 236);
 }
+#back-div {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+#back-div h4 {
+  color: rgb(199, 199, 199);
+  margin-left: 20px;
+  font-size: 2rem;
+}
+#back-icon {
+  color: rgb(199, 199, 199);
+}
 
 @media screen and (min-width: 680px) {
   .image {
