@@ -5,10 +5,12 @@ import ericeira from "../images/ericeiraRoad.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faWhatsapp, faFacebook } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import SmallNavbar from "../components/SmallNavbar";
 
 function Home() {
   return (
     <>
+      <SmallNavbar />
       <div id="first-image">
         <h3>
           <span className="sub-heading">Touch</span> the body
@@ -27,7 +29,7 @@ function Home() {
           <p>Relaxing Massage: 45€</p>
           <p>Sport Massage: 45€</p>
           <p>Foot Reflexology Massage: 35€</p>
-          <p>Theropeutic Massage: 45€</p>
+          <p>Therapeutic Massage: 45€</p>
           <p>Anti Cellulite Massage: 45€</p>
           <p>Lymphatic Drainage Massage: 45€</p>
         </div>
@@ -41,7 +43,7 @@ function Home() {
             second that he arrived in Ericeira. Great food, peaceful energy and
             amazing people from all over the world. He knew this would become
             his home, and the friends he has made here will be his family. After
-            returning several times, he finally made the permanet move to
+            returning several times, he finally made the permanent move to
             Ericeira and soon he found his calling of helping people through
             massage. He heals their body with his hands and with his words and
             energy... he heals their soul. Other than massage, Benito loves to
@@ -59,10 +61,9 @@ function Home() {
             Located in beautiful Ericeira, Portgual. There is no better way to
             relax after a long day at the beach, or after a grueling surf
             session than with an amazing massage by Benito. Trained and
-            certified at one of the most renowned massage schools in Lisbon,
-            Benito is quickly becoming recognised as Ericeira's premier
-            massuese. He will devout his full attention to all of your body's
-            needs during your massage.
+            certified at one of the most renowned massage schools in Lisbon, He
+            will devout his full attention to all of your body's needs during
+            your massage.
           </p>
         </div>
       </div>

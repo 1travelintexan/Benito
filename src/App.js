@@ -1,7 +1,6 @@
 import { Loader } from "@mantine/core";
 import { useEffect, useState } from "react";
 import Navbar from "./components/Navbar";
-import SmallNavbar from "./components/SmallNavbar";
 import { Route, Routes } from "react-router-dom";
 import Reservation from "./components/Reservation";
 import Home from "./pages/Home";
@@ -22,7 +21,6 @@ export default function App() {
   return (
     <div id="app">
       <Navbar />
-      <SmallNavbar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/reservation" element={<Reservation />} />
