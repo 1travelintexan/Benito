@@ -1,7 +1,8 @@
-import town from "../images/ericeira.png";
-import town2 from "../images/crossroad.jpg";
-import olive3 from "../images/olive3.png";
-import ericeira from "../images/ericeiraRoad.png";
+import town from "../images/benito1.jpg";
+import town2 from "../images/benito2.jpg";
+import benito3 from "../images/benito3.jpg";
+import card1 from "../images/blue-card.jpg";
+import card2 from "../images/blue-card2.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faWhatsapp, faFacebook } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
@@ -23,19 +24,20 @@ function Home() {
         </h3>
       </div>
       <div className="section" id="pricing">
-        <img src={town2} alt="ericeira" className="image" />
+        <img src={town} alt="ericeira" className="image" />
         <div className="section-heading">
           <h2>Pricing</h2>
-          <p>Relaxing Massage: 45€</p>
-          <p>Sport Massage: 45€</p>
+          <p>Relaxing Massage: 40€</p>
+          <p>Sport Massage: 40€</p>
           <p>Foot Reflexology Massage: 35€</p>
-          <p>Therapeutic Massage: 45€</p>
-          <p>Anti Cellulite Massage: 45€</p>
-          <p>Lymphatic Drainage Massage: 45€</p>
+          <p>Therapeutic Massage: 40€</p>
+          <p>Anti Cellulite Massage: 40€</p>
+          <p>Lymphatic Drainage Massage: 40€</p>
         </div>
       </div>
+      <img src={card1} alt="price card " className="image" />
       <div className="section" id="about">
-        <img src={ericeira} alt="ericeira" className="image" />
+        <img src={town2} alt="ericeira" className="image" />
         <div className="section-heading">
           <h2>About Myself:</h2>
           <p>
@@ -45,7 +47,7 @@ function Home() {
           </p>
         </div>
       </div>
-
+      <img src={card2} alt="price card 2" className="image" />
       <div className="section" id="contact">
         <div className="section-heading">
           <h2>Contact</h2>
@@ -72,7 +74,7 @@ function Home() {
             </div>
           </a>
         </div>
-        <img src={olive3} alt="ericeira" className="image" />
+        <img src={benito3} alt="ericeira" className="image" />
       </div>
     </>
   );
