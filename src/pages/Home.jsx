@@ -43,7 +43,7 @@ function Home() {
           <p>
             I am a certified massage therapist, who has a lot of passion and
             joy. It makes me so happy and grateful to see that my patients are
-            just relaxed and feel more comfortable in thier bodies.
+            just relaxed and feel more comfortable in their bodies.
           </p>
         </div>
       </div>
